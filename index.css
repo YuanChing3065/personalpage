@@ -1,0 +1,87 @@
+body {
+   background-size: cover;
+   font-family: 'Source Sans Pro', sans-serif;
+}
+a{color:gray}
+
+.vertical-center {
+  min-height: 100%;  
+  min-height: 100vh; 
+  display: flex;
+  align-items: center;
+  margin: 0px;
+}
+.jumbotron {
+  background-color: #ffff99;
+}
+
+.container {
+  border-radius: 10px;
+  height: 100%;
+  width: 40%;
+  margin:auto;
+  padding-bottom: 30px;
+  box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.1), 2px 2px 8px rgba(0, 0, 0, 0.1);
+  vertical-align: middle;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.name .description .location {
+  text-align: left;
+}
+.name {
+  font-size: 60px;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-left: 6px;
+  margin-bottom:0px;
+}
+.description {
+  font-weight: 200;
+  font-size: 17px;
+  letter-spacing:3px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+
+.inf{
+  font-weight: 300;
+  color: gray;
+  font-size:14px;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+  margin-left: 15px;
+  line-height: 0;
+  margin-top: 14px;
+}
+.inf-block{
+  padding: 0;
+  display: flex;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+@media only screen and (max-width: 700px){
+  .container{
+    width: 90%;
+  }
+}
+
+@keyframes flashin {
+ from {
+  opacity: 0;
+  -webkit-transform: translate3d(15%, 0, 0);
+  transform: translate3d(15%, 0, 0);
+}
+
+to {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+}
+}
+
+.container{
+  animation-name: flashin;
+  animation-duration: 0.8s;
+}
+}
